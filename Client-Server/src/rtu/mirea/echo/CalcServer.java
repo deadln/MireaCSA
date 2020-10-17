@@ -27,13 +27,20 @@ public class CalcServer extends Thread {
         ) {
             System.out.println("created server with port " + port);
             String inputLine;
-            CalcQueue calculator = new CalcQueue();
-            calculator.setOutStream(out);
-            calculator.start();
             while ((inputLine = in.readLine()) != null) {
-                calculator.executeCalculation(inputLine);
+                System.out.println(inputLine);
+                String[] arr = inputLine.split(" ");
+                double res = 0;
+                if(arr[1].equals("+"))
+                    res = Double.parseDouble(arr[0]) + Double.parseDouble(arr[2]);
+                else if(arr[1].equals("-"))
+                    res = Double.parseDouble(arr[0]) - Double.parseDouble(arr[2]);
+                else if(arr[1].equals("*"))
+                    res = Double.parseDouble(arr[0]) * Double.parseDouble(arr[2]);
+                else if(arr[1].equals("/"))
+                    res = Double.parseDouble(arr[0]) / Double.parseDouble(arr[2]);
+                out.println(Double.toString(res));
             }
-            calculator.interrupt();
         } catch (IOException e) {
             System.out.println("Exception caught when trying to listen on port "
                     + portNumber + " or listening for a connection");
