@@ -3,25 +3,29 @@ package rtu.mirea.echo;
 import java.net.*;
 import java.io.*;
 
-public class EchoServer {
-    public static void main(String[] args) throws IOException {
+public class CalcServer extends Thread {
 
-        if (args.length != 1) {
-            System.err.println("Usage: java EchoServer <port number>");
-            System.exit(1);
-        }
+    String port;
 
-        int portNumber = Integer.parseInt(args[0]);
+    public void setPort(String s){
+        port = s;
+    }
+
+    public void run()
+    {
+
+        int portNumber = Integer.parseInt(port);
 
         try (
                 ServerSocket serverSocket =
-                        new ServerSocket(Integer.parseInt(args[0]));
+                        new ServerSocket(Integer.parseInt(port));
                 Socket clientSocket = serverSocket.accept();
                 PrintWriter out =
                         new PrintWriter(clientSocket.getOutputStream(), true);
                 BufferedReader in = new BufferedReader(
                         new InputStreamReader(clientSocket.getInputStream()));
         ) {
+            System.out.println("created server with port " + port);
             String inputLine;
             CalcQueue calculator = new CalcQueue();
             calculator.setOutStream(out);
@@ -36,4 +40,6 @@ public class EchoServer {
             System.out.println(e.getMessage());
         }
     }
+
+
 }
