@@ -27,9 +27,14 @@ public class CalcClient {
                                 new InputStreamReader(System.in))
         ) {
             String userInput;
+            long start;
+            long end;
             while ((userInput = stdIn.readLine()) != null) {
                 out.println(userInput);
-                System.out.println("echo: " + in.readLine());
+                start = System.currentTimeMillis();
+                System.out.println("Result: " + in.readLine());
+                end = System.currentTimeMillis();
+                System.out.println("Time of query answer: " + (end - start));
             }
         } catch (UnknownHostException e) {
             System.err.println("Don't know about host " + hostName);

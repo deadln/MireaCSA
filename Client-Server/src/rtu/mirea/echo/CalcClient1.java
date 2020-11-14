@@ -1,11 +1,7 @@
 package rtu.mirea.echo;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.PrintWriter;
-import java.net.Socket;
-import java.net.UnknownHostException;
+import java.io.*;
+import java.net.*;
 
 public class CalcClient1 {
     public static void main(String[] args) throws IOException {
@@ -31,9 +27,14 @@ public class CalcClient1 {
                                 new InputStreamReader(System.in))
         ) {
             String userInput;
+            long start;
+            long end;
             while ((userInput = stdIn.readLine()) != null) {
                 out.println(userInput);
-                System.out.println("echo: " + in.readLine());
+                start = System.currentTimeMillis();
+                System.out.println("Result: " + in.readLine());
+                end = System.currentTimeMillis();
+                System.out.println("Time of query answer: " + (end - start));
             }
         } catch (UnknownHostException e) {
             System.err.println("Don't know about host " + hostName);
