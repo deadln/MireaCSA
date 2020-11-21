@@ -19,7 +19,19 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="58726a75-f513-4c1a-ab80-555014a8b760" name="Default Changelist" comment="" />
+    <list default="true" id="58726a75-f513-4c1a-ab80-555014a8b760" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../Calc-Task-manager/Calc-Task-manager.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Calc-Task-manager/src/mirea/ksp/pr4/CalcClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Calc-Task-manager/src/mirea/ksp/pr4/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Calc-Task-manager/src/mirea/ksp/pr4/ResultSender.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Calc-Task-manager/src/mirea/ksp/pr4/Task.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Calc-Task-manager/src/mirea/ksp/pr4/TaskCreator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Calc-Task-manager/src/mirea/ksp/pr4/TaskExecutor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Calc-Task-manager/src/mirea/ksp/pr4/TaskManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client-Server/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Client-Server/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Client-Server/client1000.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Client-Server/client1000.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -45,7 +57,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Calc-Task-manager" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -85,6 +97,8 @@
       <option name="presentableId" value="Default" />
       <updated>1600440501661</updated>
       <workItem from="1602919279526" duration="1996000" />
+      <workItem from="1605338274609" duration="2556000" />
+      <workItem from="1605941879915" duration="21000" />
     </task>
     <servers />
   </component>
@@ -101,5 +115,12 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1605941899406">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1605941899406" />
   </component>
 </project>

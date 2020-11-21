@@ -6,15 +6,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="afcbe347-ba37-47d1-a73a-ef204b4f4c29" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../Calc-Task-manager/Calc-Task-manager.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Calc-Task-manager/src/mirea/ksp/pr4/CalcClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Calc-Task-manager/src/mirea/ksp/pr4/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Calc-Task-manager/src/mirea/ksp/pr4/MainNIO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Calc-Task-manager/src/mirea/ksp/pr4/ResultSender.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Calc-Task-manager/src/mirea/ksp/pr4/Task.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Calc-Task-manager/src/mirea/ksp/pr4/TaskCreator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Calc-Task-manager/src/mirea/ksp/pr4/TaskExecutor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Calc-Task-manager/src/mirea/ksp/pr4/TaskManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CallService/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CallService/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Client-Server/rtu/mirea/echo/CalcQueue.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Client-Server/rtu/mirea/echo/CalcServer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Client-Server/rtu/mirea/echo/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Client-Server/rtu/mirea/echo/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/rtu/mirea/echo/CalcClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rtu/mirea/echo/CalcClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/rtu/mirea/echo/CalcClient1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rtu/mirea/echo/CalcClient1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/rtu/mirea/echo/CalcQueue.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/rtu/mirea/echo/CalcServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rtu/mirea/echo/CalcServerThread.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/rtu/mirea/echo/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rtu/mirea/echo/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client1000.py" beforeDir="false" afterPath="$PROJECT_DIR$/client1000.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,9 +42,10 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../CallService" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -111,17 +115,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
       <item itemvalue="Application.Main" />
       <item itemvalue="Application.CalcClient" />
@@ -147,6 +140,8 @@
       <workItem from="1602917223504" duration="9190000" />
       <workItem from="1603693992770" duration="3676000" />
       <workItem from="1603698345825" duration="2628000" />
+      <workItem from="1605333873100" duration="8984000" />
+      <workItem from="1605941956926" duration="594000" />
     </task>
     <servers />
   </component>
@@ -166,18 +161,18 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603700047636">
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605342779268">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603700047636" />
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605342779268" />
     <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser" timestamp="1603695464880">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1603695464880" />
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1602919276414">
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1605335796642">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1602919276414" />
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1605335796642" />
     <state width="1877" height="268" key="GridCell.Tab.0.bottom" timestamp="1603700826053">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -210,6 +205,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1602928255732" />
+    <state x="342" y="140" key="new project wizard" timestamp="1605335800649">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="342" y="140" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1605335800649" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1602924499456">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
