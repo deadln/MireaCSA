@@ -6,18 +6,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="afcbe347-ba37-47d1-a73a-ef204b4f4c29" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Calc-Task-manager/Calc-Task-manager.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Calc-Task-manager/src/mirea/ksp/pr4/CalcClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Calc-Task-manager/src/mirea/ksp/pr4/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Calc-Task-manager/src/mirea/ksp/pr4/MainNIO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Calc-Task-manager/src/mirea/ksp/pr4/ResultSender.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Calc-Task-manager/src/mirea/ksp/pr4/Task.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Calc-Task-manager/src/mirea/ksp/pr4/TaskCreator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Calc-Task-manager/src/mirea/ksp/pr4/TaskExecutor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Calc-Task-manager/src/mirea/ksp/pr4/TaskManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CallService/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CallService/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Calc-Task-manager/out/production/Calc-Task-manager/mirea/ksp/pr4/CalcClient2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Calc-Task-manager/out/production/Calc-Task-manager/mirea/ksp/pr4/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Calc-Task-manager/out/production/Calc-Task-manager/mirea/ksp/pr4/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Calc-Task-manager/out/production/Calc-Task-manager/mirea/ksp/pr4/TaskCreator.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Calc-Task-manager/out/production/Calc-Task-manager/mirea/ksp/pr4/TaskCreator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Calc-Task-manager/src/mirea/ksp/pr4/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Calc-Task-manager/src/mirea/ksp/pr4/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Calc-Task-manager/src/mirea/ksp/pr4/MainNIO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Calc-Task-manager/src/mirea/ksp/pr4/MainNIO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Calc-Task-manager/src/mirea/ksp/pr4/TaskCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Calc-Task-manager/src/mirea/ksp/pr4/TaskCreator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client1000.py" beforeDir="false" afterPath="$PROJECT_DIR$/client1000.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +53,7 @@
       <recent name="rtu.mirea.echo" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Application.CalcClient1">
     <configuration name="CalcClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="rtu.mirea.echo.CalcClient" />
       <module name="Client-Server" />
@@ -115,6 +110,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.Main" />
       <item itemvalue="Application.CalcClient" />
@@ -123,8 +129,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.CalcClient" />
         <item itemvalue="Application.CalcClient1" />
+        <item itemvalue="Application.CalcClient" />
         <item itemvalue="Application.CalcServerThread" />
       </list>
     </recent_temporary>
@@ -142,6 +148,9 @@
       <workItem from="1603698345825" duration="2628000" />
       <workItem from="1605333873100" duration="8984000" />
       <workItem from="1605941956926" duration="594000" />
+      <workItem from="1606210259450" duration="1161000" />
+      <workItem from="1606314945652" duration="205000" />
+      <workItem from="1606315576317" duration="694000" />
     </task>
     <servers />
   </component>
@@ -169,26 +178,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1603695464880" />
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1605335796642">
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1606315150203">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1605335796642" />
-    <state width="1877" height="268" key="GridCell.Tab.0.bottom" timestamp="1603700826053">
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1606315150203" />
+    <state width="1877" height="268" key="GridCell.Tab.0.bottom" timestamp="1606324977681">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="268" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1603700826053" />
-    <state width="1877" height="268" key="GridCell.Tab.0.center" timestamp="1603700826053">
+    <state width="1877" height="268" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606324977681" />
+    <state width="1877" height="268" key="GridCell.Tab.0.center" timestamp="1606324977681">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="268" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1603700826053" />
-    <state width="1877" height="268" key="GridCell.Tab.0.left" timestamp="1603700826053">
+    <state width="1877" height="268" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606324977681" />
+    <state width="1877" height="268" key="GridCell.Tab.0.left" timestamp="1606324977681">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="268" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1603700826053" />
-    <state width="1877" height="268" key="GridCell.Tab.0.right" timestamp="1603700826053">
+    <state width="1877" height="268" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606324977681" />
+    <state width="1877" height="268" key="GridCell.Tab.0.right" timestamp="1606324977681">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="268" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1603700826053" />
+    <state width="1877" height="268" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606324977681" />
     <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1602928255732">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
