@@ -13,9 +13,6 @@ public class ClientHandler extends ChannelInboundHandlerAdapter {
         RequestData msg = new RequestData();
         Scanner in = new Scanner(System.in);
         String s = in.nextLine();
-        if(s.equals("")){
-            return;
-        }
         msg.setStringValue(s);
         ChannelFuture future = ctx.writeAndFlush(msg);
     }
