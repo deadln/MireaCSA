@@ -44,11 +44,10 @@ public class NettyClient {
             Channel channel = f.channel();
             Scanner in = new Scanner(System.in);
             String s;
-            while(true) { // Цикл для того чтобы клиент не закрывался сразу после получения результата
+            while(true) { // Цикл для ввода
                 s = in.nextLine();
                 ChannelFuture cf = channel.writeAndFlush(s + "\r\n");
             }
-            // ^^^ МОЯ МОДИФИКАЦИЯ ^^^
         } finally {
             workerGroup.shutdownGracefully();
         }

@@ -6,18 +6,12 @@ import java.util.HashSet;
 
 public class ChatHandler extends SimpleChannelInboundHandler<String> {
 
-    static HashMap<Channel, String> users = new HashMap<>();
-    static ArrayList<String> messages = new ArrayList<>();
-    //volatile ArrayList<Channel> channels = new ArrayList<>();
-    long timestamp;
-
-
-    public ChatHandler() {
-        this.timestamp = System.currentTimeMillis();
-    }
+    static HashMap<Channel, String> users = new HashMap<>(); // Канал пользователя <-> Имя пользователя
+    static ArrayList<String> messages = new ArrayList<>(); // Сообщения, отправленные в чате
 
     @Override
     public void channelActive(ChannelHandlerContext ctx) throws Exception {
+        // Ввод имени
         ChannelFuture cf = ctx.writeAndFlush("Enter your username:\r\n");
         if(!cf.isSuccess()) {
             System.out.println("Error: " + cf.cause());
@@ -28,12 +22,12 @@ public class ChatHandler extends SimpleChannelInboundHandler<String> {
     public void channelRead0(ChannelHandlerContext ctx, String msg)
             throws Exception {
         msg = msg.trim();
-        if(!users.keySet().contains(ctx.channel())){
-            if(users.values().contains(msg)){
+        if(!users.keySet().contains(ctx.channel())){ // Если пользователь не зарегистрирован
+            if(users.values().contains(msg)){ // Проверка имени на дубликат
                 ctx.writeAndFlush("This username is not available. Try the other one.\r\n");
                 System.out.println("Username not available");
             }
-            else{
+            else{ // Добавление пользователя
                 users.put(ctx.channel(), msg);
                 for(var message : messages)
                     ctx.channel().writeAndFlush(message);
@@ -42,7 +36,7 @@ public class ChatHandler extends SimpleChannelInboundHandler<String> {
                 System.out.println("New user " + msg);
             }
         }
-        else{
+        else{ // Отправка сообщения
             String message = "<" + users.get(ctx.channel()) + ">: " + msg + "\r\n";
             messages.add(message);
             sendMessage(message);
@@ -50,7 +44,7 @@ public class ChatHandler extends SimpleChannelInboundHandler<String> {
         }
     }
 
-    public void channelInactive(ChannelHandlerContext ctx) throws Exception {
+    public void channelInactive(ChannelHandlerContext ctx) throws Exception { // Выход пользователя
         sendMessage("User <" + users.get(ctx.channel()) + "> has left the chat\r\n");
         messages.add("User <" + users.get(ctx.channel()) + "> has left the chat\r\n");
         users.remove(ctx.channel());
@@ -58,7 +52,7 @@ public class ChatHandler extends SimpleChannelInboundHandler<String> {
     }
 
 
-    public void sendMessage(String msg){
+    public void sendMessage(String msg){ // Отправка сообщения всем пользователям
         for(var channel : users.keySet()){
             channel.writeAndFlush(msg);
         }
