@@ -28,11 +28,13 @@ public class NettyClient {
                             new ResponseDataDecoder(), new ClientHandler());
                 }
             });
+            // vvv МОЯ МОДИФИКАЦИЯ vvv
             while(true) { // Цикл для того чтобы клиент не закрывался сразу после получения результата
                 ChannelFuture f = b.connect(host, port).sync();
                 f.channel().closeFuture().sync();
 
             }
+            // ^^^ МОЯ МОДИФИКАЦИЯ ^^^
         } finally {
             workerGroup.shutdownGracefully();
         }
