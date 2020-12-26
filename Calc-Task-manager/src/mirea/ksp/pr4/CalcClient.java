@@ -40,7 +40,7 @@ public class CalcClient {
                 end = System.currentTimeMillis();
                 System.out.println("Time of query answer: " + (end - start));
                 //Код для установки одноразового исполнения
-
+                break;
             }
         } catch (UnknownHostException e) {
             System.err.println("Don't know about host " + hostName);

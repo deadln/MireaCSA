@@ -9,7 +9,6 @@ public class ClientHandler extends ChannelInboundHandlerAdapter {
     @Override
     public void channelActive(ChannelHandlerContext ctx)
             throws Exception {
-
         RequestData msg = new RequestData();
         Scanner in = new Scanner(System.in);
         String s = in.nextLine();

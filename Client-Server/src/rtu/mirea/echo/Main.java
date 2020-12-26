@@ -12,8 +12,7 @@ public class Main {
         )
         {
             while(true)
-            {
-                Socket clientSocket = serverSocket.accept();
+            {                Socket clientSocket = serverSocket.accept();
                 new CalcServerThread(args[0], serverSocket, clientSocket).start();
                 threads++;
                 System.out.println("Thread number: " + threads);
